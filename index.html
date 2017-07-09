@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+
+<body>
+    <div class="header__background">
+        <div class="background__image"></div>
+        <div class="header__info">
+            <div class="container">
+                <div class="logo">
+                    <a href=""><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <div class="page__title">
+                    Fusce rutrum pretium lorem semper nulla.
+                    <p>Vestibulum ornare cursus nisl, fermentum tincidunt libero pretium et. Maecenas interdum ligula non fermentum fringilla.</p>
+                </div>
+                <div class="header__icons">
+                    <div class="icons ic_1">
+                        <a href="">
+                            <span>
+                                <img src="img/settings.png" alt="settings">
+                                <span>About</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="icons ic_2">
+                        <a href="">
+                            <span>
+                                <img src="img/user.png" alt="user">
+                                <span>Team</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="icons ic_3">
+                        <a href="">
+                            <span>
+                                <img src="img/bubble.png" alt="bubble">
+                                <span>Services</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="icons ic_4">
+                        <a href="">
+                            <span>
+                                <img src="img/photo.png" alt="photo">
+                                <span>Portfolio</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="icons ic_5">
+                        <a href="">
+                            <span>
+                                <img src="img/pen.png" alt="pen">
+                                <span>Blog</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="icons ic_6">
+                        <a href="">
+                            <span>
+                                <img src="img/paperplane.png" alt="paperplane">
+                                <span>Contact</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <img src="img/scroll.png" class="animated pulse" alt="scroll">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="container">
+            <div class="wrapper">
+                <div class="logo_">
+                    <a href=""><img src="img/bhagaskara.png" alt="bhagaskara-"></a>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li class="active"><a href="">ABOUT</a></li>
+                            <li><a href="">TEAM </a></li>
+                            <li><a href="">SERVICES</a></li>
+                            <li><a href="">PORTFOLIO</a></li>
+                            <li><a href="">BLOG</a></li>
+                            <li><a href="">CONTACT</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</body>
+<script>
+    $(document).ready(function() {
+        $('.icons').each(function(index) {
+            var current = $(this);
+
+            setTimeout(function() {
+                current.addClass('active animated flipInX');
+            }, index * 200);
+
+        });
+
+    });
+
+</script>
+
+</html>
